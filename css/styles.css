@@ -849,8 +849,8 @@ background-color: #404BBF;
     border-radius: 2px;
 }
 .modal-checkbox:checked + .check-icon{
-    background-image: url(../images/icons/_checkbox_.svg);
     background-color: var(--logo-blue);
+    background-image: url(../images/icons/_checkbox_.svg);
     border-color: var(--logo-blue);
     background-origin: border-box;
     background-size: contain;
