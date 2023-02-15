@@ -713,13 +713,14 @@ background-color: #404BBF;
 .user-panel{
     position: relative;
     display: block;
+    margin-bottom: 26px;
 
 }
 
 .input{
     width: 100%;
     height: 40px; 
-    margin-bottom: 26px;
+    
     
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -748,17 +749,21 @@ background-color: #404BBF;
  
  .modal-label{
     position: absolute;
-    top: -16px;
+    top: -20px;
     left: 0px;
     font-size: 12px;
+    line-height: 16px;
     letter-spacing: 0.04em;
     color: #8E8F99;
  }
  .modal-section{
-    padding: 72px 24px;
+    padding: 72px 24px 24px;
+
     
 }
 .sending-data-btn{
+    min-width: 169px;
+    min-height: 56px;
     padding: 16px 32px;
     background-color: var(--logo-blue);
     color: #ffffff;
@@ -828,4 +833,25 @@ background-color: #404BBF;
 .form-user-agreements{
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.modal-checkbox{
+    --webkit--appearance: none;
+    appearance: none;
+    position: absolute;
+    
+}
+.check-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+}
+.modal-checkbox:checked + .check-icon{
+    background-image: url(../images/icons/_checkbox_.svg);
+    background-color: var(--logo-blue);
+    border-color: var(--logo-blue);
+    background-origin: border-box;
+    background-size: contain;
 }

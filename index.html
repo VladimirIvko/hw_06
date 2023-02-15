@@ -44,38 +44,42 @@
             </button>
             <div class="modal-section">
                 <h2 class="description-modal list-header"><strong>Leave your contacts and we will call you back</strong></h2>
-            <form class="user-panel">
-                <label class="modal-label" for="name-clients">Name</label>
-                <input class="input input-name" type="text" name="name-clients" id="name-clients" placeholder=" ">
+            <form class="form-user-panel">
+                <div class="user-panel">
+                    <label class="modal-label" for="name-clients">Name</label>
+                <input class="input input-name" type="text" name="name-clients" id="name-clients" placeholder=" " required>
                 <svg class="user-icons" width="12px" height="12px">
                     <use href="./images/icons/user.svg#icon-name-user"></use>
                    </svg>
-            </form>
-            <form class="user-panel">
-                <label class="modal-label" for="tel-clients">Phone</label>
-                <input class="input input-tel" type="tel" name="tel-clients" id="tel-clients" placeholder=" ">
-                <svg class="user-icons" width="12px" height="12px">
+                </div>
+
+                <div class="user-panel">
+                    <label class="modal-label" for="tel-clients">Phone</label>
+                <input class="input input-tel" type="tel" name="tel-clients" id="tel-clients" placeholder=" " required>
+                <svg class="user-icons" width="13px" height="13px">
                     <use href="./images/icons/user.svg#icon-phone-user"></use>
                    </svg>
-            </form>
-            <form class="user-panel">
-                <label class="modal-label" for="mail-clients">Email</label>
-                <input class="input" type="email" name="mail-clients" id="mail-clients" placeholder=" ">
-                <svg class="user-icons" width="12px" height="12px">
+                </div>
+                <div class="user-panel">
+                    <label class="modal-label" for="mail-clients">Email</label>
+                <input class="input" type="email" name="mail-clients" id="mail-clients" placeholder=" " required>
+                <svg class="user-icons" width="15px" height="12px">
                     <use href="./images/icons/user.svg#icon-mail-user"></use>
                    </svg>
-            </form>
-            <form class="user-panel"> 
-                <textarea class="area-user" name="comment-user" id="comment-user" cols="30" rows="10" placeholder="Text input"></textarea>
+                </div>
+                <div class="user-panel">
+                    <textarea class="area-user" name="comment-user" id="comment-user" cols="30" rows="10" placeholder="Text input"></textarea>
                 <label class="modal-label" for="comment-user">Comment</label>
-            </form>
             
-            <form class="form-user-agreements">
-                <input class="modal-checkbox" type="checkbox" name="user-agreements" id="user-agreements" >
-                <label for="user-agreements"><span class="user-agreements-descriptions" >I accept the terms and conditions of the</span></label>
+                </div>
+            
+            <div class="form-user-agreements">
+                <label><input class="modal-checkbox" type="checkbox" name="user-agreements" >
+                <span class="check-icon"></span><span class="user-agreements-descriptions" >I accept the terms and conditions of the</span></label>
                 <a class="user-agreements-link" href="">Privacy Policy</a>
-            </form>
+            </div>
             <button type="submit" class="sending-data-btn">Send</button>
+            </form>
             </div>
         </div>
     </div>
@@ -411,7 +415,7 @@
             <a class="footer-link link-web link" href="">Web<span class="logo-footer">Studio</span></a>
             <p class="footer-description">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
-        <div class="social"><p class="social-titel-footer"><b>Social media</b></p>
+        <div class="social"><b class="social-titel-footer">Social media</b>
         <ul class="socials-list">
            <li class="list box"><a class="socials-link"
            href="https://www.instagram.com/"
@@ -458,16 +462,16 @@
           </a></li></ul>
         </div>
         <div class="subscribe">
-            <p class="titel-subscribe"><b>Subscribe</b></p>
-            <div class="sending-data-footer"> 
-            <input type="mail" class="input-mail" placeholder="E-mail">
+            <b class="titel-subscribe">Subscribe</b>
+            <form class="sending-data-footer"> 
+            <input type="mail" class="input-mail" placeholder="E-mail" required>
             <div class="footer-button">
                 <button type="submit" class="subscribe-btn"><span class="subscribe-btn-text">Subscribe</span></button>
                 <svg class="subscribe-icon" width="20px" height="24px">
                     <use href="./images/icons/user.svg#icon-icon-send"></use>
                    </svg>
                 </div>
-            </div>
+            </form>
         </div>
     
     </div>
