@@ -850,7 +850,7 @@ background-color: #404BBF;
 }
 .modal-checkbox:checked + .check-icon{
     background-color: var(--logo-blue);
-    background-image: url(../images/icons/_checkbox_.svg);
+    background-image: url(../images/icons/checkbox.svg);
     border-color: var(--logo-blue);
     background-origin: border-box;
     background-size: contain;
